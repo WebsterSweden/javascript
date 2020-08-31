@@ -1,5 +1,17 @@
+# Git version control.
+.git
+
 # Macintosh operating system.
 .DS_Store
 
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Visual Studio Code.
+.vscode
+
 # Windows operating system.
-Thumbs.ds
+Thumbs.db
