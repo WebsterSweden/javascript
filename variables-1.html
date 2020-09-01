@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABxJREFUeNpi/P//PwMlgHHUgFEDRg0YLgYABBgA/Vov4R1OQM4AAAAASUVORK5CYII="
+        type="image/ico">
+    <title>JavaScript Variables - 1</title>
+</head>
+
+<body>
+    <script>
+        console.log("START");
+
+        // Global scope
+        var variableOne = "variableOne";
+
+        console.log("Global scope: " + variableOne);
+        // console.log("Global scope: " + variableTwo); // ReferenceError: variable is not defined.
+
+        function functionTwo() {
+            // Function scope
+            var variableTwo = "variableTwo";
+            console.log("Functional scope: " + variableOne);
+            console.log("Functional scope: " + variableTwo);
+        }
+
+        functionTwo();
+
+        console.log("Global scope: " + variableOne);
+        // console.log("Global scope: " + variableTwo); // ReferenceError: variable is not defined.
+
+    </script>
+
+    <script>
+        let letOne = "letOne";
+
+        console.log("Global scope: " + letOne);
+        // console.log("Global scope: " + letTwo); // ReferenceError: variable is not defined.
+
+        function functionThree() {
+            let letTwo = "letTwo";
+            console.log("Function scope: " + letOne);
+            console.log("Function scope: " + letTwo);
+        }
+
+        functionThree();
+
+        console.log("Global scope: " + letOne);
+        // console.log("Global scope: " + letTwo); // ReferenceError: variable is not defined.
+
+        {
+            // Block scope
+            console.log("Block scope: " + variableOne);
+            // console.log("Block scope: " + variableTwo); // ReferenceError: variable is not defined.
+
+            console.log("Block scope: " + letOne);
+            // console.log("Block scope: " + letTwo); // ReferenceError: variable is not defined.
+        }
+
+        console.log("END");
+    </script>
+
+</body>
+
+</html>
