@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABxJREFUeNpi/P//PwMlgHHUgFEDRg0YLgYABBgA/Vov4R1OQM4AAAAASUVORK5CYII="
+        type="image/ico">
+    <title>JavaScript Form - 1</title>
+    <script src="js-form-1.js" defer="defer"></script>
+</head>
+
+<body>
+    <form action="#">
+        <button id="buttonOne" name="buttonOne">Button One</button>
+        <br>
+        <button id="buttonDisable">Disable Button One</button>
+        <button id="buttonEnable">Enable Button One</button>
+    </form>
+
+    <hr>
+
+    <form>
+        Empty form element.
+    </form>
+
+    <hr>
+
+    <form accept-charset="utf-8">
+        Form accept-charset attribute.
+    </form>
+
+    <hr>
+
+    <form action="#">
+        Form action attribute #.
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="javascript-form-1.html">
+        Form action attribute this file.
+        <br>
+        Result: Reloads the current web page.
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="https://example.com/">
+        Form action attribute https://example.com/.
+        <br>
+        Result: https://example.com/?
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="javascript:location.reload(true)">
+        Form action attribute javascript:location.reload(true).
+        <br>
+        Result:
+        <input type="submit">
+    </form>
+</body>
+
+</html>
