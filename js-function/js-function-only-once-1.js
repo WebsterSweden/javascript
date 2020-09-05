@@ -55,3 +55,19 @@ function onlyOnceTwo() {
 }
 
 document.getElementById("formOneSubmit").addEventListener("click", onlyOnceTwo);
+
+var flagStatus = true;
+
+function onlyOnceThree() {
+    'use strict';
+    if (flagStatus === true) {
+        console.log("flagStatus: " + flagStatus);
+        flagStatus = false;
+        document.forms.formTwo.style.backgroundColor = "red";
+        document.forms.formTwo.textTwo.disabled = true;
+    } else {
+        console.log("flagStatus: " + flagStatus);
+    }
+}
+
+document.forms.formTwo.formTwoSubmit.addEventListener("click", onlyOnceThree);

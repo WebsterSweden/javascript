@@ -1,17 +1,21 @@
-# Git version control.
-.git
+# Generic .gitignore settings.
 
-# Macintosh operating system.
-.DS_Store
+# Git version control. Global ignore .git directory.
+**/.git/
 
-# Sass
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# Macintosh operating system. Global ignore .DS_Store files.
+**/.DS_Store
 
-# Visual Studio Code.
-.vscode
+# Sass. Global ignore Sass related files.
+**/.sass-cache/
+**/*.css.map
+**/*.sass.map
+**/*.scss.map
 
-# Windows operating system.
-Thumbs.db
+# Visual Studio Code. Global ignore Visual Studio Code directory.
+**/.vscode/
+
+# Windows operating system. Global ignore Thumbs.db files.
+**/Thumbs.db
+
+# Project .gitignore settings.
