@@ -24,6 +24,20 @@ function stringSplit() {
 
     var splitOutputFive = sentenceOne.split("t");
     console.log(splitOutputFive);
+
+    var splitOutputSix = sentenceOne.length;
+    console.log(splitOutputSix);
+
+    console.log("Tis is \'string two");
+    console.log("Tis is \"string two");
+    console.log("Tis is \\string two");
+
+    // String Object.
+    // var stringObject = new String("stringObject"); // jslint: Unexpected 'new'.
+    // console.log(stringObject);
+    // String literal.
+    var stringLiteral = "stringLiteral";
+    console.log(stringLiteral);
 }
 
 document.getElementById("string-split").addEventListener("click", stringSplit);
