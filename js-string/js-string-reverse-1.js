@@ -7,9 +7,9 @@ window
 
 function sentencePrint() {
     'use strict';
-    var sentenceInput = document.getElementById("sentence-one").innerText;
-    document.getElementById("sentence-output").innerText = sentenceInput;
-    console.log("sentence-input: " + sentenceInput);
+    var sentenceInput = document.getElementById("sentenceOne").innerText;
+    document.getElementById("sentenceOutput").innerText = sentenceInput;
+    console.log("sentenceInput: " + sentenceInput);
 }
 
-document.getElementById("sentence-input").addEventListener("click", sentencePrint);
+document.getElementById("sentenceInput").addEventListener("click", sentencePrint);

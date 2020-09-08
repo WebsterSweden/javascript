@@ -5,7 +5,7 @@ browser, devel, es6
 window
 */
 
-console.log("scripts-head.js");
+console.log("script-head.js");
 
 function functionHeadOne() {
     'use strict';

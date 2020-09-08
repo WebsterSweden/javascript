@@ -9,7 +9,7 @@ var arrayOne = ["element-one", "element-two", "element-three"];
 
 function arrayOneFunction(element) {
     'use strict';
-    document.getElementById("array-one-output").innerHTML += element + "<br>";
+    document.getElementById("arrayOneOutput").innerHTML += element + "<br>";
     console.log(element);
 }
 
@@ -19,13 +19,13 @@ function arrayOneForEach() {
     arrayOne.forEach(arrayOneFunction);
 }
 
-document.getElementById("array-one").addEventListener("click", arrayOneForEach);
+document.getElementById("arrayOne").addEventListener("click", arrayOneForEach);
 
 var arrayTwo = ["element-four", "element-five", "element-six"];
 
 function arrayTwoFunction(element) {
     'use strict';
-    document.getElementById("array-two-output").innerHTML += element + "<br>";
+    document.getElementById("arrayTwoOutput").innerHTML += element + "<br>";
     console.log(element);
 }
 
@@ -35,4 +35,4 @@ function arrayTwoForEach() {
     arrayTwo.forEach(arrayTwoFunction);
 }
 
-document.getElementById("array-two").addEventListener("click", arrayTwoForEach);
+document.getElementById("arrayTwo").addEventListener("click", arrayTwoForEach);

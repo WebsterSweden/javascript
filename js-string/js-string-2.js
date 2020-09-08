@@ -5,7 +5,7 @@ browser, devel, es6
 window
 */
 
-var sentenceOne = document.getElementById("string-one").innerText;
+var sentenceOne = document.getElementById("stringOne").innerText;
 
 function stringSplit() {
     'use strict';
@@ -40,4 +40,4 @@ function stringSplit() {
     console.log(stringLiteral);
 }
 
-document.getElementById("string-split").addEventListener("click", stringSplit);
+document.getElementById("stringSplit").addEventListener("click", stringSplit);

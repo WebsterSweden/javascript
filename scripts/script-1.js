@@ -17,12 +17,12 @@ document.getElementById("buttonDateTime").addEventListener("click", functionDate
 
 function numberAddFunction() {
     'use strict';
-    var numberOne = parseInt(document.getElementById("number-one").value);
+    var numberOne = parseInt(document.getElementById("numberOne").value);
     console.log(numberOne);
-    var numberTwo = parseInt(document.getElementById("number-two").value);
+    var numberTwo = parseInt(document.getElementById("numberTwo").value);
     console.log(numberTwo);
     var numberAddResult = numberOne + numberTwo;
     console.log(numberOne + " + " + numberTwo + " = " + numberAddResult);
 }
 
-document.getElementById("number-add").addEventListener("click", numberAddFunction);
+document.getElementById("numberAdd").addEventListener("click", numberAddFunction);

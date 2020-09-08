@@ -5,7 +5,7 @@ browser, devel, es6
 window
 */
 
-console.log("scripts-bottom.js");
+console.log("script-bottom.js");
 
 function functionBottomOne() {
     'use strict';
