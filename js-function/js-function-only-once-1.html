@@ -9,6 +9,12 @@
         type="image/ico">
     <title>JavaScript Function only once - 1</title>
     <script src="js-function-only-once-1.js" defer="defer"></script>
+    <script>
+        function functionHeadOne() {
+            'use strict';
+            console.log("functionHeadOne");
+        }
+    </script>
 </head>
 
 <body>
@@ -20,20 +26,31 @@
 
     <p id="randomNumberOutput"></p>
 
-    <br>
+    <hr>
 
+    <p>TODO: When page is loaded. The first click on Submit do not work. Why?</p>
     <form action="#" id="formOne" name="formOne">
         <input type="text" name="textOne" id="textOne">
         <input type="submit" name="formOneSubmit" id="formOneSubmit">
+        <!-- <input type="submit" name="formOneSubmit" id="formOneSubmit" onclick="onlyOnceTwo()"> -->
         <input type="reset">
     </form>
 
-    <br>
+    <hr>
 
+    <p>TODO: The JavaScript <code>document.CurrentScript</code> gives <code>null</code>. Why?</p>
     <form action="javascript:document.currentScript" id="formTwo" name="formTwo" method="post">
         <input type="text" name="textTwo" id="textTwo">
         <input type="submit" name="formTwoSubmit" id="formTwoSubmit">
         <input type="reset">
+    </form>
+
+    <hr>
+
+    <p>Test JavaScript placed in head and button with onclick event.</p>
+    <form action="#" name="formThree" id="formThree">
+        <input type="text" name="textThree" id="textThree">
+        <input type="submit" onclick="functionHeadOne()">
     </form>
 
 </body>
