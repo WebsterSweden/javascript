@@ -8,10 +8,49 @@
         href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABxJREFUeNpi/P//PwMlgHHUgFEDRg0YLgYABBgA/Vov4R1OQM4AAAAASUVORK5CYII="
         type="image/ico">
     <title>JavaScript Function - 1</title>
-    <script src="js-function-1.js"></script>
+    <script src="js-function-1.js" defer="defer"></script>
 </head>
 
 <body>
+    <button id="functionOneButton">functionOne()</button>
+    <p id="functionOneOutput"></p>
+
+    <hr>
+
+    <button id="functionTwoButton">functionTwo()</button>
+    <p id="functionTwoOutput"></p>
+
+    <hr>
+
+    <button id="functionThreeButton">functionThree("argument")</button>
+    <p id="functionThreeOutput"></p>
+
+    <hr>
+
+    <button id="functionFourButton">functionFour("argument")</button>
+    <p id="functionFourOutput"></p>
+
+    <hr>
+
+    <button id="functionFiveButton" onclick="functionFive('argument')">functionFive('argument')</button>
+    <p id="functionFiveOutput"></p>
+
+    <hr>
+
+    <label for="functionSixInput">Enter value:</label>
+    <input type="text" name="functionSixInput" id="functionSixInput">
+    <br>
+    <button id="functionSixButton"
+        onclick="functionSix(document.getElementById('functionSixInput').value)">functionSix()</button>
+    <p id="functionSixOutput"></p>
+
+    <hr>
+
+    <label for="functionSevenInput">Enter value:</label>
+    <input type="text" name="functionSevenInput" id="functionSevenInput">
+    <br>
+    <button id="functionSevenButton">functionSeven()</button>
+    <p id="functionSevenOutput"></p>
 
 </body>
 
