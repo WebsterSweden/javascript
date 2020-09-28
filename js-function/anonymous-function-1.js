@@ -20,3 +20,9 @@ var anonymousFunctionTwoVariable = function anonymousFunctionTwo() {
 };
 
 document.getElementById("anonymousFunctionTwoButton").addEventListener("click", anonymousFunctionTwoVariable);
+
+// Immediately Invoked Function Expression (IIFE).
+(function () {
+    'use strict';
+    console.log("Immediately Invoked Function Expression (IFEE)");
+}());
