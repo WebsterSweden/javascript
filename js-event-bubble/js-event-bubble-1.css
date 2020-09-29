@@ -1,0 +1,30 @@
+/* body {
+    background-color: red;
+} */
+
+#divBetween {
+    border: thin solid black;
+    padding: 1rem;
+}
+
+#divBetween:hover {
+    border: thin solid green;
+}
+
+#divInner {
+    border: thin solid black;
+    padding: 1rem;
+}
+
+#divInner:hover {
+    border: thin solid blue;
+}
+
+#divOuter {
+    border: thin solid black;
+    padding: 1rem;
+}
+
+#divOuter:hover {
+    border: thin solid red;
+}
