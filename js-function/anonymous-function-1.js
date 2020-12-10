@@ -26,3 +26,8 @@ document.getElementById("anonymousFunctionTwoButton").addEventListener("click", 
     'use strict';
     console.log("Immediately Invoked Function Expression (IFEE)");
 }());
+
+(function () {
+    'use strict';
+    console.log("Anonymous function");
+}());
